@@ -1289,7 +1289,7 @@ input[type=checkbox]+label .icon {
     }
 
     h2 {
-        font-size: 48px;
+        font-size: 28px;
         line-height: 1.1
     }
 
@@ -2191,7 +2191,7 @@ html[dir=rtl] .quote_header-icon {
     }
 
     .quote_header .title {
-        font-size: 48px;
+        font-size: 30px;
         line-height: 1.1
     }
 
