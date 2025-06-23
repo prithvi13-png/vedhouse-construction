@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Service | Vedhouse Construction</title>
+    <link rel="stylesheet preload" as="style" href="css/preload.min.css" />
+    <link rel="stylesheet preload" as="style" href="css/icomoon.css" />
+    <link rel="stylesheet preload" as="style" href="css/libs.min.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/single-service.min.css" />
+</head>
+
+<body>
+    <header class="header" data-page="single-service" data-page-parent="services">
+        <div class="container d-flex">
+             <a class="brand" href="index.html">
+                <div style="background-color: #f2f2f2; padding: 6px; display: inline-block; border-radius: 8px;">
+                    <img src="img/logo.png" alt="Vedhouse Constructions Logo" width="80" height="80" />
+                </div>
+            </a>
+            <nav class="header_nav collapse" id="headerMenu">
+                <ul class="header_nav-list">
+                    <li class="header_nav-list_item dropdown">
+                        <a class="nav-link nav-item dropdown-toggle" href="index.html" data-bs-toggle="collapse"
+                            data-bs-target="#homeMenu" data-trigger="dropdown" data-main-link="true"
+                            aria-expanded="false" aria-controls="homeMenu" data-page="home" data-page-parent="home">
+                            <span class="nav-item_text"> Home </span>
+                        </a>
+                    </li>
+
+                    <li class="header_nav-list_item">
+                        <a class="nav-item nav-link" href="about.html" data-page="about" data-single="true">
+                            <span class="nav-item_text">About</span>
+                        </a>
+                    </li>
+                    <li class="header_nav-list_item dropdown">
+                        <a class="nav-link nav-item dropdown-toggle" href="services.html"
+                            data-bs-toggle="collapse" data-bs-target="#servicesMenu" data-trigger="dropdown"
+                            data-page-parent="services" data-main-link="true" aria-expanded="false"
+                            aria-controls="servicesMenu">
+                            <span class="nav-item_text"> Services </span>
+                        </a>
+                        <div class="dropdown-menu collapse" id="servicesMenu">
+                            <ul class="dropdown-list">
+                                <li class="list-item">
+                                    <a class="dropdown-item nav-item" data-page="services" data-page-parent="services"
+                                        href="services.html" data-main="true">
+                                        Services
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="dropdown-item nav-item" data-page="single-service"
+                                        data-page-parent="services" href="services.html">
+                                        Single Service
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="dropdown-item nav-item" data-page="team" data-page-parent="services"
+                                        href="team.html">
+                                        Team
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- <li class="header_nav-list_item dropdown">
+                        <a class="nav-link nav-item dropdown-toggle" href="projects.html" data-bs-toggle="collapse"
+                            data-bs-target="#projectsMenu" data-trigger="dropdown" data-page-parent="projects"
+                            data-main-link="true" aria-expanded="false" aria-controls="projectsMenu">
+                            <span class="nav-item_text"> Projects </span>
+                        </a>
+                        <div class="dropdown-menu collapse" id="projectsMenu">
+                            <ul class="dropdown-list">
+                                <li class="list-item">
+                                    <a class="dropdown-item nav-item" data-page="projects" data-page-parent="projects"
+                                        href="projects.html" data-main="true">
+                                        Projects 1
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="dropdown-item nav-item" data-page="projects2" data-page-parent="projects"
+                                        href="projects2.html">
+                                        Projects 2
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="dropdown-item nav-item" data-page="single-project"
+                                        data-page-parent="projects" href="single-project.html">
+                                        Single project
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li> -->
+ <li class="header_nav-list_item">
+                        <a class="nav-link nav-item" href="contacts.html">
+                            <span class="nav-item_text">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header_trigger" data-bs-toggle="collapse" data-bs-target="#headerMenu"
+                aria-controls="headerMenu" aria-expanded="false">
+                <span class="line line--short"></span>
+                <span class="line"></span>
+                <span class="line line--short"></span>
+                <span class="line"></span>
+            </button>
+        </div>
+    </header>
+    <header class="page primary-bg">
+        <div class="container">
+            <div class="section_header">
+                <span class="subtitle subtitle--extended">What you're looking for,
+                    it's here!</span>
+                <h1 class="title">Our Services</h1>
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs_item">
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li class="breadcrumbs_item breadcrumbs_item--current">
+                        <span>Our Services</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="media">
+            <picture>
+                <source data-srcset="img/cross.jpg" srcset="img/cross.jpg" type="image/webp" />
+                <img class="lazy" data-src="img/cross.jpg" src="img/cross.jpg" alt="media" />
+            </picture>
+        </div>
+    </header>
+    <!-- service content start -->
+    <main>
+        <section class="tabs section">
+            <div class="container">
+                <div class="tabs_header section_header">
+                    <div class="tabs_header-wrapper">
+                        <span class="subtitle" data-aos="fade-down">What We Offer You</span>
+                        <h2 class="title" data-aos="fade-right">
+                            0% Interest<span class="highlight"><br />No Hidden Charges.</span>
+                        </h2>
+                    </div>
+                    <p class="text" data-aos="fade-left">
+                        Enjoy stress-free home construction with transparent pricing and flexible payments.
+                        Our 0% interest plans make building your dream home simple, affordable, and worry-free.
+                    </p>
+                </div>
+                <div class="tabs_services">
+                    <div class="tabs_nav nav nav-tabs">
+                        <h5 class="tabs_nav-item active" data-bs-toggle="tab" data-bs-target="#service01"
+                            aria-controls="service01">
+                            Interest Free EMI Method
+                        </h5>
+                        <h5 class="tabs_nav-item" data-bs-toggle="tab" data-bs-target="#service02"
+                            aria-controls="service02">
+                            Easy Installments
+                        </h5>
+                        <h5 class="tabs_nav-item" data-bs-toggle="tab" data-bs-target="#service03"
+                            aria-controls="service03">
+                            100% TRANSPARENCY IN AGREEMENT
+                        </h5>
+                        <h5 class="tabs_nav-item" data-bs-toggle="tab" data-bs-target="#service04"
+                            aria-controls="service04">
+                            Assured Construction Quality
+                        </h5>
+
+                    </div>
+                    <div class="tabs_content tab-content" id="service_tabs">
+                        <div class="tabs_content-item">
+                            <h5 class="trigger" data-bs-toggle="collapse" data-bs-target="#service01"
+                                aria-expanded="true" aria-controls="service01">
+                                Interest Free EMI Method
+                            </h5>
+                            <div class="tab-pane collapse fade show" id="service01" data-bs-parent="#service_tabs">
+                                <div class="content">
+                                    <div class="media">
+                                        <picture>
+                                            <source data-srcset="img/h2.jpg" srcset="img/h2.jpg"
+                                                type="image/webp" />
+                                            <img class="lazy" data-src="img/h2.jpg" src="img/h2.jpg"
+                                                alt="media" />
+                                        </picture>
+                                    </div>
+                                    <div class="main">
+                                        <div class="info">
+
+                                            <a class="main_btn btn" href="contacts.html">Get Service</a>
+
+                                        </div>
+                                        <div class="description">
+                                            <p class="text">
+                                                Is a payment method that allows you
+                                                to split the cost & construction into equal monthly installments
+                                                without paying any interest.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tabs_content-item">
+                            <h5 class="trigger" data-bs-toggle="collapse" data-bs-target="#service02"
+                                aria-expanded="false" aria-controls="service02">
+                                Easy Installments
+                            </h5>
+                            <div class="tab-pane collapse fade" id="service02" data-bs-parent="#service_tabs">
+                                <div class="content">
+                                    <div class="media">
+                                        <picture>
+                                            <source data-srcset="img/tag4.jpg" srcset="img/tag4.jpg"
+                                                type="image/webp" />
+                                            <img class="lazy" data-src="img/tag4.jpg" src="img/tag4.jpg"
+                                                alt="media" />
+                                        </picture>
+                                    </div>
+                                    <div class="main">
+                                        <div class="info">
+
+                                            <a class="main_btn btn" href="contacts.html">Get Service</a>
+
+                                        </div>
+                                        <div class="description">
+                                            <p class="text">
+                                                Pay 50% downpayment first,Then the
+                                                remaining 50% can be paid in equal installments over 72
+                                                Months.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tabs_content-item">
+                            <h5 class="trigger" data-bs-toggle="collapse" data-bs-target="#service03"
+                                aria-expanded="false" aria-controls="service03">
+                                 100% TRANSPARENCY IN AGREEMENT
+                            </h5>
+                            <div class="tab-pane collapse fade" id="service03" data-bs-parent="#service_tabs">
+                                <div class="content">
+                                    <div class="media">
+                                        <picture>
+                                            <source data-srcset="img/home-4.jpeg" srcset="img/home-4.jpeg"
+                                                type="image/webp" />
+                                            <img class="lazy" data-src="img/home-4.jpeg" src="img/home-4.jpeg"
+                                                alt="media" />
+                                        </picture>
+                                    </div>
+                                    <div class="main">
+                                        <div class="info">
+
+                                            <a class="main_btn btn" href="contacts.html">Get Service</a>
+
+                                        </div>
+                                        <div class="description">
+                                            <p class="text">
+                                                We Believe in Building Trust
+                                along with homes. That's why
+                                we're proud to say
+                                NO HIDDEN CHARGES - EVER
+                                Get a clear breakdown of costs
+                                and build your dream home
+                                with full transparency.
+                                            </p>
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tabs_content-item">
+                            <h5 class="trigger" data-bs-toggle="collapse" data-bs-target="#service04"
+                                aria-expanded="false" aria-controls="service04">
+                              Assured Construction Quality
+                            </h5>
+                            <div class="tab-pane collapse fade" id="service04" data-bs-parent="#service_tabs">
+                                <div class="content">
+                                    <div class="media">
+                                        <picture>
+                                            <source data-srcset="img/home-1.jpeg" srcset="img/home-1.jpeg"
+                                                type="image/webp" />
+                                            <img class="lazy" data-src="img/home-1.jpeg" src="img/home-1.jpeg"
+                                                alt="media" />
+                                        </picture>
+                                    </div>
+                                    <div class="main">
+                                        <div class="info">
+
+                                            <a class="main_btn btn" href="contacts.html">Get Service</a>
+
+                                        </div>
+                                        <div class="description">
+                                            <p class="text">
+                                                We use premium-grade materials and expert supervision to ensure your home is built to
+                                last. Our residential construction standards guarantee safety, durability, and long-term
+                                value.
+                                            </p>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="process section primary-bg">
+            <div class="process_container container">
+                <div class="process_header section_header">
+                    <span class="subtitle">Better process</span>
+                    <h2 class="title">The Process of Working <span class="highlight">with Us</span></h2>
+                </div>
+                <p class="process_text">
+                    Vedhouse Constructions offers a simple, transparent homebuilding process backed by 0% interest EMI
+                    plans. From planning to project delivery, we ensure trust, clarity, and customer satisfaction.
+                </p>
+            </div>
+            <div class="container-fluid process_fluid p-0">
+                <div class="container">
+                    <ul class="process_steps progress-tracker progress-tracker--vertical">
+                        <li class="process_steps-step progress-step">
+                            <div class="progress-marker">
+                                <span class="progress-marker_spot"></span>
+                                <span class="progress-marker_spot--underlay"></span>
+                            </div>
+                            <div class="process_steps-step_wrapper">
+                                <h4 class="title">Submit Your Request</h4>
+                                <p class="description">
+                                    Share your requirements with us to begin planning your dream home.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="process_steps-step progress-step">
+                            <div class="progress-marker">
+                                <span class="progress-marker_spot"></span>
+                                <span class="progress-marker_spot--underlay"></span>
+                            </div>
+                            <div class="process_steps-step_wrapper">
+                                <h4 class="title">Get a 0% EMI Estimate</h4>
+                                <p class="description">Receive a clear cost breakdown and interest-free EMI plan no bank
+                                    loan needed.</p>
+                            </div>
+                        </li>
+                        <li class="process_steps-step progress-step">
+                            <div class="progress-marker">
+                                <span class="progress-marker_spot"></span>
+                                <span class="progress-marker_spot--underlay"></span>
+                            </div>
+                            <div class="process_steps-step_wrapper">
+                                <h4 class="title">Transparent Agreement & Design Finalization</h4>
+                                <p class="description">We finalize a transparent contract and get your custom designs
+                                    approved.</p>
+                            </div>
+                        </li>
+                        <li class="process_steps-step progress-step">
+                            <div class="progress-marker">
+                                <span class="progress-marker_spot"></span>
+                                <span class="progress-marker_spot--underlay"></span>
+                            </div>
+                            <div class="process_steps-step_wrapper">
+                                <h4 class="title">Build & Stay Updated</h4>
+                                <p class="description">
+                                    Our team executes the project with quality and provides regular progress updates.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="services section-nopb">
+            <div class="container">
+                <ul class="services_list">
+                    <li class="services_list-item" data-aos="fade-up">
+                        <div class="services_header section_header">
+                            <span class="subtitle" data-aos="fade-down">What we do</span>
+                            <h2 class="title"> <span class="highlight">To Save
+                                    100%
+                                    INTEREST</span></h2>
+                            <p class="text" data-aos="fade-in" data-aos-duration="500" data-aos-delay="100">
+                                Discover your dream home with modern designs,
+                                Affordable Interest Free construction Models, with
+                                Easy EMI Options.
+                            </p>
+                            <ul class="checklist">
+                                <li class="checklist_item" data-aos="fade-up">
+                                    <i class="icon-check icon"></i> Affordability
+                                    Made Simple
+                                </li>
+                                <li class="checklist_item" data-aos="fade-up" data-aos-delay="100">
+                                    <i class="icon-check icon"></i> Ease Of Paymets
+                                </li>
+                                <li class="checklist_item" data-aos="fade-up" data-aos-delay="150">
+                                    <i class="icon-check icon"></i> No Hidden Fees
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="services_list-item" data-aos="fade-up">
+                        <div class="wrapper">
+                            <span class="number">01</span>
+                            <h4 class="title">0% - INTEREST
+                                CHARGES</h4>
+                            <p class="description">
+                                Make Your Dream Home a
+                                Reality!
+                                No Interest Charges
+                                Build your dream home without
+                                taking a bank Loan! Our
+                                construction plans are now
+                                more budget-friendly than ever!
+                            </p>
+
+                        </div>
+                    </li>
+                    <li class="services_list-item" data-aos="fade-up">
+                        <div class="wrapper">
+                            <span class="number">02</span>
+                            <h4 class="title">BUDGET FRIENDLY EMI
+                                OPTIONS</h4>
+                            <p class="description">
+                                Build Your Dream Home with
+                                Flexibility!
+                                Simple,Predictable, and
+                                Flexible Monthly Payments
+                                tailored to your needs. Build
+                                with ease and peace of mind!
+                            </p>
+
+                        </div>
+                    </li>
+                    <li class="services_list-item" data-aos="fade-up">
+                        <div class="wrapper">
+                            <span class="number">03</span>
+                            <h4 class="title">100% TRANSPARENCY IN
+                                AGREEMENT</h4>
+                            <p class="description">
+                                We Believe in Building Trust
+                                along with homes. That's why
+                                we're proud to say
+                                NO HIDDEN CHARGES EVER
+                                Get a clear breakdown of costs
+                                and build your dream home.
+                               
+                            </p>
+
+                        </div>
+                    </li>
+                    <li class="services_list-item" data-aos="fade-up">
+                        <div class="wrapper">
+                            <span class="number">04</span>
+                            <h4 class="title">Assured Construction Quality</h4>
+                            <p class="description">
+                                We use premium-grade materials and expert supervision to ensure your home is built to
+                                last. Our residential construction standards guarantee safety, durability, and long-term
+                                value.
+                            </p>
+
+                        </div>
+                    </li>
+                    <li class="services_list-item" data-aos="fade-up">
+                        <div class="wrapper">
+                            <span class="number">05</span>
+                            <h4 class="title">On-Time Project<br/> Delivery</h4>
+                            <p class="description">
+                                We follow a well-defined project timeline to ensure on-time handover without delays.
+                                With Vedhouse, your home is delivered as promised no waiting, no surprises.
+                            </p>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="reviews section">
+            <div class="container">
+                <div class="reviews_header-wrapper">
+                    <div class="reviews_header section_header">
+                        <span class="subtitle">Reviews</span>
+                        <h2 class="title">What <span class="highlight">Our Clients</span> Say</h2>
+                    </div>
+                    <div class="swiper-controls reviews_slider-controls">
+                        <a class="swiper-button swiper-button-next" href="#">
+                            <i class="icon-arrow_left icon"></i>
+                        </a>
+                        <a class="swiper-button swiper-button-prev" href="#">
+                            <i class="icon-arrow_right icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="reviews_slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="reviews_slider-slide swiper-slide">
+                            <div class="rating">
+                                <i class="icon-star icon"></i>
+                                <i class="icon-star icon"></i>
+                                <i class="icon-star icon"></i>
+                                <i class="icon-star icon"></i>
+                                <i class="icon-star icon"></i>
+                            </div>
+                            <p class="main">
+                               Vedhouse made affordable home construction possible with their 0% interest EMI plan. I built my dream home without the burden of a bank loan!
+                            </p>
+                            <div class="media">
+                                <div class="media_avatar avatar">
+                                    <picture>
+                                        <source data-srcset="img/aunty.jpeg" srcset="img/aunty.jpeg"
+                                            type="image/webp" />
+                                        <img class="lazy" data-src="img/aunty.jpeg" src="img/aunty.jpeg"
+                                            alt="Vera Robinson" />
+                                    </picture>
+                                </div>
+                                <div class="media_info">
+                                    <span class="name">Anjali Rao</span>
+                                    <span class="details">Bengaluru</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews_slider-slide swiper-slide">
+                            <div class="rating">
+                                <i class="icon-star icon"></i>
+                                <i class="icon-star icon"></i>
+                                <i class="icon-star icon"></i>
+                                <i class="icon-star icon"></i>
+                                <i class="icon-star icon"></i>
+                            </div>
+                            <p class="main">
+                              The construction process was smooth, transparent, and completely stress-free. I really appreciated their eco-friendly building approach and regular updates.
+                            </p>
+                            <div class="media">
+                                <div class="media_avatar avatar">
+                                    <picture>
+                                        <source data-srcset="img/uncle.jpeg" srcset="img/uncle.jpeg"
+                                            type="image/webp" />
+                                        <img class="lazy" data-src="img/uncle.jpeg" src="img/uncle.jpeg"
+                                            alt="Benjamin Norris" />
+                                    </picture>
+                                </div>
+                                <div class="media_info">
+                                    <span class="name">Dayananda Shetty </span>
+                                    <span class="details">Mysuru</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews_slider-slide swiper-slide">
+                            <div class="rating">
+                                <i class="icon-star icon"></i>
+                                <i class="icon-star icon"></i>
+                                <i class="icon-star icon"></i>
+                                <i class="icon-star icon"></i>
+                                <i class="icon-star icon"></i>
+                            </div>
+                            <p class="main">
+                               Thanks to Vedhouse, we got a custom-designed home with flexible EMI payments and no hidden charges. A trustworthy construction company you can rely on!
+                            </p>
+                            <div class="media">
+                                <div class="media_avatar avatar">
+                                    <picture>
+                                        <source data-srcset="img/fam1.jpeg" srcset="img/fam1.jpeg"
+                                            type="image/webp" />
+                                        <img class="lazy" data-src="img/fam1.jpeg" src="img/fam1.jpeg"
+                                            alt="Lisa Smith" />
+                                    </picture>
+                                </div>
+                                <div class="media_info">
+                                    <span class="name">Mehta Family </span>
+                                    <span class="details">Pune</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews_slider-slide swiper-slide">
+                            <div class="rating">
+                                <i class="icon-star icon"></i>
+                                <i class="icon-star icon"></i>
+                                <i class="icon-star icon"></i>
+                                <i class="icon-star icon"></i>
+                                <i class="icon-star icon"></i>
+                            </div>
+                            <p class="main">
+                               Vedhouse helped us build a beautiful home with interest-free EMI and complete project clarity. Great team and excellent quality!
+                            </p>
+                            <div class="media">
+                                <div class="media_avatar avatar">
+                                    <picture>
+                                        <source data-srcset="img/fam3.jpeg" srcset="img/fam3.jpeg"
+                                            type="image/webp" />
+                                        <img class="lazy" data-src="img/fam3.jpeg" src="img/fam3.jpeg"
+                                            alt="Lucas Perry" />
+                                    </picture>
+                                </div>
+                                <div class="media_info">
+                                    <span class="name">Sharma Family </span>
+                                    <span class="details">Bengaluru</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="faq section">
+            <div class="container">
+                <div class="faq_header section_header">
+                    <span class="subtitle">Your Concerns, Our Priority</span>
+                    <h2 class="title">
+                        Have More Questions About 0% EMI Home Building?
+
+
+                        <span class="highlight">Let’s Talk</span>
+                    </h2>
+                    <p class="text">
+                        Build your dream home with 0% EMI and full transparency.
+                        Our team is here to answer your questions and guide you every step of the way.
+                    </p>
+                    <div class="wrapper">
+                        <a class="btn" href="contacts.html">Contact Us</a>
+                    </div>
+                </div>
+                <div class="faq_accordion" id="faq_accordion">
+                    <div class="faq_accordion-item">
+                        <button class="trigger" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                            aria-expanded="true">
+                            <span class="question h5">Where is Company Located?</span>
+                            <span class="icon">
+                                <i class="icon icon-plus"></i>
+                                <i class="icon icon-minus"></i>
+                            </span>
+                        </button>
+                        <div id="collapseThree" class="collapse show" data-bs-parent="#faq_accordion">
+                            <div class="content">
+                                <p class="text">
+                                    No. 227, 1st Floor, 4th Cross, 1st Stage,
+                                    Brindavan Extension, Mysuru – 570020
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq_accordion-item">
+                        <button class="trigger" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                            aria-expanded="false">
+                            <span class="question h5">What sets Vedhouse Constructions apart in the Indian housing
+                                market?</span>
+                            <span class="icon">
+                                <i class="icon icon-plus"></i>
+                                <i class="icon icon-minus"></i>
+                            </span>
+                        </button>
+                        <div id="collapseOne" class="collapse" data-bs-parent="#faq_accordion">
+                            <div class="content">
+                                <p class="text">
+                                    Vedhouse Constructions specializes in interest-free EMI home construction, making
+                                    homeownership accessible without relying on traditional bank loans. We offer
+                                    affordable pricing, transparent contracts, and timely delivery for all residential
+                                    projects.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq_accordion-item">
+                        <button class="trigger" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                            aria-expanded="false">
+                            <span class="question h5">Does Vedhouse maintain quality in construction materials and
+                                execution?</span>
+                            <span class="icon">
+                                <i class="icon icon-plus"></i>
+                                <i class="icon icon-minus"></i>
+                            </span>
+                        </button>
+                        <div id="collapseTwo" class="collapse" data-bs-parent="#faq_accordion">
+                            <div class="content">
+                                <p class="text">
+                                    Absolutely. Vedhouse uses high-quality, eco-friendly materials and adheres to modern
+                                    structural standards to ensure every home is durable, safe, and sustainable for
+                                    long-term living.
+
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq_accordion-item">
+                        <button class="trigger" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                            aria-expanded="false">
+                            <span class="question h5">Can I customize the design of my home with Vedhouse
+                                Constructions?</span>
+                            <span class="icon">
+                                <i class="icon icon-plus"></i>
+                                <i class="icon icon-minus"></i>
+                            </span>
+                        </button>
+                        <div id="collapseFour" class="collapse" data-bs-parent="#faq_accordion">
+                            <div class="content">
+                                <p class="text">
+                                    Yes. We offer custom floor plans and design flexibility to suit your lifestyle and
+                                    preferences. From layout adjustments to elevation styling, your dream home is built
+                                    exactly the way you envision it.
+
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--  service content end -->
+    <footer class="footer primary-bg">
+        <div class="container">
+            <div class="footer_main">
+                <div class="footer_main-block">
+                    <a class="brand" href="index.html">
+                <div style="background-color: #f2f2f2; padding: 6px; display: inline-block; border-radius: 8px;">
+                    <img src="img/logo.png" alt="Vedhouse Constructions Logo" width="80" height="80" />
+                </div>
+            </a>
+                    <p class="footer_main-block_subtitle footer_main-block_subtitle--brand">
+                        Discover your dream home with modern designs,
+                        Affordable Interest Free construction Models, with
+                        Easy EMI Options.
+                    </p>
+                </div>
+                <div class="footer_main-block">
+                    <h4 class="footer_main-block_title">Contacts</h4>
+                    <div class="group-wrapper">
+                        <i class="icon-call icon"></i>
+                        <div class="group">
+                            <a class="link" href="tel:+917411234007">+91 7411234007 </a>
+                            <a class="link" href="tel:+917411234006">+91 7411234006</a>
+                        </div>
+                    </div>
+                    <div class="group-wrapper">
+                        <i class="icon-location icon"></i>
+                        <div class="group">
+                            <span class="content">No. 227, 1st Floor, 4th Cross,
+                                <br /> 1st Stage,
+                                Brindavan Extension,<br /> Mysuru – 570020</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_main-block">
+                    <h4 class="footer_main-block_title">Company</h4>
+                    <ul class="footer_main-block_nav">
+                        <li class="list-item">
+                            <a class="nav-link link" href="about.html" data-page="about">
+                                <i class="icon-chevron_right icon"></i> About
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a class="nav-link link" href="services.html" data-page="services">
+                                <i class="icon-chevron_right icon"></i> Services
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a class="nav-link link" href="projects.html" data-page="projects">
+                                <i class="icon-chevron_right icon"></i> Projects
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_main-block">
+                    <h4 class="footer_main-block_title">Stay Updated with Vedhouse</h4>
+                    <p class="footer_main-block_subtitle footer_main-block_subtitle--newsletter">
+                        Get the latest updates on our projects, offers, and interest-free home construction plans.
+                    </p>
+                    <form class="footer_main-block_form" data-type="newsletter" action="#" method="POST"
+                        name="newsletterForm" id="newsletterForm">
+                        <input class="field required" name="newsletterEmail" id="newsletterEmail" type="text"
+                            placeholder="Email" data-type="email" />
+                        <button class="btn btn--submit btn--static" type="submit" aria-label="Subscribe">
+                            <span class="text">Subscribe</span>
+                            <i class="icon-paperplane icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer_secondary">
+                <p class="footer_secondary-copyright">
+
+                </p>
+             <ul class="socials">
+                        <!-- <li class="socials_item">
+                            <a class="socials_item-link" href="#" target="_blank" rel="noopener noreferrer"
+                                aria-label="Facebook">
+                                <i class="icon-facebook"></i>
+                            </a>
+                        </li> -->
+                        <li class="socials_item">
+                            <a class="socials_item-link"
+                                href="https://www.instagram.com/vedhouseconstructions?igsh=azcwNGUzYWRpOWZ3"
+                                target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <i class="icon-instagram"></i>
+                            </a>
+                        </li>
+
+                        <li class="socials_item">
+                            <a class="socials_item-link" href="https://x.com/vedhouse79251" target="_blank"
+                                rel="noopener noreferrer" aria-label="Twitter">
+                                <i class="icon-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="socials_item">
+                            <a class="socials_item-link"
+                                href="https://wa.me/917411234007?text=Hello%2C%20I'm%20interested%20in%20your%20services"
+                                target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                                <i class="icon-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li class="socials_item">
+                            <a class="socials_item-link"
+                                href="https://www.linkedin.com/in/vedhouse-constructions-private-limited-9079a7370/"
+                                target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="socials_item">
+                            <a class="socials_item-link"
+                                href="https://youtube.com/@vedhouseconstructions?si=qJvlc165V_e73T8P" target="_blank"
+                                rel="noopener noreferrer" aria-label="WhatsApp">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </footer>
+    <button id="scrollTrigger" type="button">
+        <i class="icon icon-arrow_right"></i>
+    </button>
+    <script id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflS50iB-/www-widgetapi.js"
+        async=""></script>
+    <script src="https://www.youtube.com/player_api"></script>
+    <script src="js/common.min.js"></script>
+    <script src="js/singleservice.min.js"></script>
+</body>
+
+</html>
