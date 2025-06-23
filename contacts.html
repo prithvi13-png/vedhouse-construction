@@ -16,7 +16,7 @@
             <div class="container d-flex">
                  <a class="brand" href="index.html">
                 <div style="background-color: #f2f2f2; padding: 6px; display: inline-block; border-radius: 8px;">
-                    <img src="img/logo.png" alt="Vedhouse Constructions Logo" width="80" height="80" />
+                    <img src="img/logo.png" alt="Vedhouse Constructions Logo" width="60" height="60" />
                 </div>
             </a>
                 <nav class="header_nav collapse" id="headerMenu">
@@ -78,56 +78,6 @@
                                 </ul>
                             </div>
                         </li>
-                        <!-- <li class="header_nav-list_item dropdown">
-                            <a
-                                class="nav-link nav-item dropdown-toggle"
-                                href="projects.html"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#projectsMenu"
-                                data-trigger="dropdown"
-                                data-page-parent="projects"
-                                data-main-link="true"
-                                aria-expanded="false"
-                                aria-controls="projectsMenu"
-                            >
-                                <span class="nav-item_text"> Projects </span>
-                            </a>
-                            <div class="dropdown-menu collapse" id="projectsMenu">
-                                <ul class="dropdown-list">
-                                    <li class="list-item">
-                                        <a
-                                            class="dropdown-item nav-item"
-                                            data-page="projects"
-                                            data-page-parent="projects"
-                                            href="projects.html"
-                                            data-main="true"
-                                        >
-                                            Projects 1
-                                        </a>
-                                    </li>
-                                    <li class="list-item">
-                                        <a
-                                            class="dropdown-item nav-item"
-                                            data-page="projects2"
-                                            data-page-parent="projects"
-                                            href="projects2.html"
-                                        >
-                                            Projects 2
-                                        </a>
-                                    </li>
-                                    <li class="list-item">
-                                        <a
-                                            class="dropdown-item nav-item"
-                                            data-page="single-project"
-                                            data-page-parent="projects"
-                                            href="single-project.html"
-                                        >
-                                            Single project
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li> -->
                         <li class="header_nav-list_item dropdown">
                             <a
                                 class="nav-link nav-item dropdown-toggle"
@@ -266,45 +216,68 @@
 Reach out to us today and our expert team will guide you through every step of the construction process.
                             </p>
                         </div>
-                        <form
-                            action="form.php"
-                            class="contact_form contact-form d-flex flex-wrap justify-content-between"
-                            method="POST"
-                            name="feedbackForm"
-                            data-type="feedback"
-                        >
-                            <input
-                                class="contact-form_field contact-form_field--half field required"
-                                name="feedbackName"
-                                id="feedbackName"
-                                type="text"
-                                placeholder="Full name"
-                            />
-                            <input
-                                class="contact-form_field contact-form_field--half field required"
-                                data-type="tel"
-                                type="text"
-                                name="feedbackTel"
-                                id="feedbackTel"
-                                placeholder="Phone"
-                            />
-                            <input
-                                class="contact-form_field field required"
-                                data-type="email"
-                                type="text"
-                                name="feedbackEmail"
-                                id="feedbackEmail"
-                                placeholder="Email Address"
-                            />
-                            <textarea
-                                class="contact-form_field field required"
-                                data-type="message"
-                                name="feedbackMessage"
-                                id="feedbackMessage"
-                                placeholder="Message"
-                            ></textarea>
-                            <button type="submit" class="contact-form_btn btn">Send message</button>
-                        </form>
+                     <form
+    id="feedbackForm"
+    class="contact_form contact-form d-flex flex-wrap justify-content-between"
+    method="POST"
+>
+    <input
+        class="contact-form_field contact-form_field--half field required"
+        name="feedbackName"
+        id="feedbackName"
+        type="text"
+        placeholder="Full name"
+        required
+    />
+    <input
+        class="contact-form_field contact-form_field--half field required"
+        name="feedbackTel"
+        id="feedbackTel"
+        type="text"
+        placeholder="Phone"
+        required
+    />
+    <input
+        class="contact-form_field field required"
+        name="feedbackEmail"
+        id="feedbackEmail"
+        type="email"
+        placeholder="Email Address"
+        required
+    />
+    <textarea
+        class="contact-form_field field required"
+        name="feedbackMessage"
+        id="feedbackMessage"
+        placeholder="Message"
+        required
+    ></textarea>
+    <button type="submit" class="contact-form_btn btn">Send message</button>
+    <div id="formMessage"></div>
+</form>
+<script>
+document.getElementById("feedbackForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent page reload
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    fetch("form.php", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.text())
+    .then(result => {
+        document.getElementById("formMessage").innerHTML = result;
+        form.reset();
+    })
+    .catch(error => {
+        document.getElementById("formMessage").innerHTML = '<div class="failed">Something went wrong. Please try again.</div>';
+        console.error("Error:", error);
+    });
+});
+</script>
+
                     </div>
                     <div class="secondary">
                         <ul class="contact_info contact-info">
@@ -393,7 +366,7 @@ Brindavan Extension, Mysuru – 570020</span>
                 <div class="footer_main-block">
                     <a class="brand" href="index.html">
                 <div style="background-color: #f2f2f2; padding: 6px; display: inline-block; border-radius: 8px;">
-                    <img src="img/logo.png" alt="Vedhouse Constructions Logo" width="80" height="80" />
+                    <img src="img/logo.png" alt="Vedhouse Constructions Logo" width="60" height="60" />
                 </div>
             </a>
                     <p class="footer_main-block_subtitle footer_main-block_subtitle--brand">
@@ -445,15 +418,6 @@ Brindavan Extension,<br/> Mysuru – 570020</span>
                     <p class="footer_main-block_subtitle footer_main-block_subtitle--newsletter">
                        Get the latest updates on our projects, offers, and interest-free home construction plans.
                     </p>
-                    <form class="footer_main-block_form" data-type="newsletter" action="#" method="POST"
-                        name="newsletterForm" id="newsletterForm">
-                        <input class="field required" name="newsletterEmail" id="newsletterEmail" type="text"
-                            placeholder="Email" data-type="email" />
-                        <button class="btn btn--submit btn--static" type="submit" aria-label="Subscribe">
-                            <span class="text">Subscribe</span>
-                            <i class="icon-paperplane icon"></i>
-                        </button>
-                    </form>
                 </div>
             </div>
             <div class="footer_secondary">
@@ -461,12 +425,6 @@ Brindavan Extension,<br/> Mysuru – 570020</span>
                    
                 </p>
                  <ul class="socials">
-                        <!-- <li class="socials_item">
-                            <a class="socials_item-link" href="#" target="_blank" rel="noopener noreferrer"
-                                aria-label="Facebook">
-                                <i class="icon-facebook"></i>
-                            </a>
-                        </li> -->
                         <li class="socials_item">
                             <a class="socials_item-link"
                                 href="https://www.instagram.com/vedhouseconstructions?igsh=azcwNGUzYWRpOWZ3"

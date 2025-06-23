@@ -1,45 +1,36 @@
 <?php
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
-
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["feedbackName"])) {
+    $name = htmlspecialchars(trim($_POST['feedbackName']));
+    $email = filter_var(trim($_POST['feedbackEmail']), FILTER_SANITIZE_EMAIL);
+    $phone = htmlspecialchars(trim($_POST['feedbackTel']));
+    $messageText = htmlspecialchars(trim($_POST['feedbackMessage']));
 
-    $name = filter_var(trim($_POST['feedbackName']), FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-    $senderEmail = filter_var(trim($_POST['feedbackEmail']), FILTER_SANITIZE_EMAIL);
-    $senderTel = filter_var(trim($_POST['feedbackTel']), FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-    $messageText = filter_var(trim($_POST['feedbackMessage']), FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-
-    if (!filter_var($senderEmail, FILTER_VALIDATE_EMAIL)) {
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         echo '<div class="failed">Invalid email address.</div>';
         exit;
     }
 
     $to = "vedhouseconstructions@gmail.com";
-    $subject = "Contact Us - vedhouseconstructions.com";
-
+    $subject = "Contact Form Submission";
     $message = "
-    <html>
-    <body>
-        <h2>New Contact Form Submission</h2>
+        <html><body>
+        <h3>Contact Form Submission</h3>
         <p><strong>Name:</strong> {$name}</p>
-        <p><strong>Email:</strong> {$senderEmail}</p>
-        <p><strong>Phone:</strong> {$senderTel}</p>
+        <p><strong>Email:</strong> {$email}</p>
+        <p><strong>Phone:</strong> {$phone}</p>
         <p><strong>Message:</strong><br>{$messageText}</p>
-    </body>
-    </html>
+        </body></html>
     ";
 
     $headers = "From: noreply@vedhouseconstructions.com\r\n";
-    $headers .= "Reply-To: {$senderEmail}\r\n";
-    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Reply-To: {$email}\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
     if (mail($to, $subject, $message, $headers)) {
-        echo '<div class="success">Success: Your message has been sent!</div>';
+        echo '<div class="success">Your message has been sent successfully!</div>';
     } else {
-        echo '<div class="failed">Failed: Email could not be sent.</div>';
+        echo '<div class="failed">Failed to send your message. Try again later.</div>';
     }
-
 } else {
     echo '<div class="failed">Invalid request.</div>';
 }
